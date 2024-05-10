@@ -444,6 +444,7 @@
         // Simulating vh an vw with rem: http://stackoverflow.com/questions/13948713/is-there-any-cross-browser-javascript-for-making-vh-and-vw-units-work
         // But kindle 4 doesn't support rem (so all sizes are fixed fallback for kindle 4)
         // Kindle 4 viewport: 600x706 (landscape 800x506) (in window.load event, window.resize event is not called)
+	// Iflytek C1 400 * 530
         // Paperwhite 3 viewport: 1072x1268 (in window.load event it is 0x0, in window.resized
         function viewport() {
             var e = window, a = 'inner';
@@ -451,7 +452,12 @@
                 a = 'client';
                 e = document.documentElement || document.body;
             }
-            return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+            var width = e[a + 'Width'],
+	    height = e[a + 'Height'];
+	    // 减去 30 个像素的高度
+	    height -= 30;
+
+	    return { width: width, height: height };
         }
 
         function setRem(prefix) {
