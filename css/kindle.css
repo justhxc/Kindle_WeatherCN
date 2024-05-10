@@ -172,6 +172,7 @@ html.night {
     font-size: 5rem;
     margin-top: 5%;
     top: 1%;
+    color: blue; /* 设置时间颜色为蓝色 */
 }
 
 .colDesc {
