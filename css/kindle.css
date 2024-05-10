@@ -43,9 +43,10 @@ html.night {
 }
 
 #city {
-    font-size: 20px;
-    font-size: 3rem;
+    font-size: 40px;
+    font-size: 5rem;
     position: absolute;
+    font-weight: bold; /* 将字体加粗 */
     top: 1.5%;
     right: 3%;
     text-decoration: none;
@@ -120,6 +121,7 @@ html.night {
     text-align: center;
     height: 100%;
     overflow: hidden;
+    background-color: blue; /* 设置为蓝色 */
 }
 
 .night .col {
