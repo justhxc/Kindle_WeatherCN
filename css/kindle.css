@@ -61,6 +61,18 @@ html.night {
     text-align: center;
     font-family: electronicFont;
 }
+/** 时钟样式 */
+#lastUpdate {
+    position: relative;
+    top: 20%;
+    left: 0%;
+    font-size: 50px;
+    font-size: 38rem;
+    font-weight: bolder;
+    text-align: center;
+    font-family: electronicFont;
+    color: rgb(7, 217, 249); /* 设置颜色为绿色 */
+}
 
 .tempWrapper {
     position: absolute;
@@ -172,7 +184,7 @@ html.night {
     font-size: 5rem;
     margin-top: 5%;
     top: 1%;
-    color: blue; /* 设置时间颜色为蓝色 */
+    color: rgb(0, 0, 0); /* 设置时间颜色为蓝色 */
 }
 
 .colDesc {
