@@ -153,10 +153,9 @@ html.night {
 
 }
 
-#forecast {
+/* #forecast {
     bottom: 30%; 
-    /* 调整 sun 底部距离 */
-}
+} */
 
 #sun {
     position: absolute;
